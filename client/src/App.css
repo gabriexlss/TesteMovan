@@ -1,0 +1,167 @@
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #f0f2f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 380px;
+  background: white;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  box-shadow: 4px 0 10px rgba(0,0,0,0.05);
+  overflow-y: auto;
+}
+
+header {
+  padding: 15px 20px;
+  background: #2c3e50;
+  color: white;
+}
+
+header h1 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.lab-section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+h3 {
+  margin: 0 0 5px 0;
+  font-size: 1rem;
+  color: #34495e;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 0;
+}
+
+input {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.sugg-mini {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.sugg-mini li {
+  padding: 8px 12px;
+  cursor: pointer;
+  border-bottom: 1px solid #f5f5f5;
+  font-size: 0.85rem;
+}
+
+.sugg-mini li:hover {
+  background: #f0f7ff;
+}
+
+.debug-box {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  padding: 10px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.8rem;
+  color: #2c3e50;
+}
+
+.scrollable {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.form-mini {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #fcfcfc;
+  padding: 10px;
+  border: 1px dashed #ccc;
+  border-radius: 6px;
+}
+
+.ship-search {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.shipments-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.btn-clear {
+  background: none;
+  border: none;
+  color: #e74c3c;
+  cursor: pointer;
+  font-size: 0.8rem;
+  text-decoration: underline;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.button-stack {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: opacity 0.2s;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-primary { background: #3498db; color: white; flex: 1; }
+.btn-success { background: #27ae60; color: white; flex: 1; }
+.btn-secondary { background: #95a5a6; color: white; }
+
+.map-area {
+  flex-grow: 1;
+  position: relative;
+}
